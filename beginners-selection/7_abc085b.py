@@ -1,3 +1,2 @@
 n = int(input())
-d = [int(i) for i in input().split()]
-print(len(set(d)))
+print(len(set([int(input()) for i in range(n)])))
