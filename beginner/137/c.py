@@ -13,3 +13,5 @@ count = Counter(st)
 for v in count.values():
     if v != 1:
         for n in range(1, v):
+            ans += n
+print(ans)
