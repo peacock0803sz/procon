@@ -9,7 +9,7 @@ for i in range(n):
     st[i].sort()
     st[i] = str(st[i])
 st.sort()
-count = Counter(st).values()
-print(st)
-print(count)
-print(ans)
+count = Counter(st)
+for v in count.values():
+    if v != 1:
+        for n in range(1, v):
