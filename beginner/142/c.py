@@ -4,10 +4,9 @@ import sys
 def main():
     n = int(input())
     a = [int(i) for i in sys.stdin.readline().split()]
-    ans = []
-    ans_append = ans.append
+    ans = [0] * n
     for i in range(n):
-        ans_append(a.index(i + 1) + 1)
+        ans[a[i] - 1] = i + 1
     print(*ans)
 
 
